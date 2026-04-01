@@ -1,0 +1,3 @@
+10.pdf | FAILED | Text extraction error: Nemotron OCR totally exhausted or timed out across all scanned pages.
+WhatsApp Image 2026-01-31 at 16.47.52.jpeg | FAILED | Text extraction error: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=240)
+Gemini_Generated_Image_vh5vapvh5vapvh5v.png | FAILED | Text extraction error: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=240)

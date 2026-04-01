@@ -1,0 +1,827 @@
+{
+  "status": "Success",
+  "generated_at": "2026-03-23T21:48:28.515739",
+  "summary": {
+    "total_documents": 5,
+    "total_keywords_extracted": 428,
+    "unique_keywords_global": 314,
+    "avg_keywords_per_doc": 85.6
+  },
+  "top_global_keywords": [
+    [
+      "date",
+      5
+    ],
+    [
+      "name",
+      5
+    ],
+    [
+      "result",
+      5
+    ],
+    [
+      "shivappa",
+      4
+    ],
+    [
+      "jakkali",
+      4
+    ],
+    [
+      "code",
+      4
+    ],
+    [
+      "as",
+      4
+    ],
+    [
+      "15",
+      4
+    ],
+    [
+      "not",
+      4
+    ],
+    [
+      "cum",
+      4
+    ],
+    [
+      "certificate",
+      4
+    ],
+    [
+      "019",
+      4
+    ],
+    [
+      "digilocker",
+      4
+    ],
+    [
+      "annapurna",
+      3
+    ],
+    [
+      "pattanashetti",
+      3
+    ],
+    [
+      "pattana",
+      3
+    ],
+    [
+      "shetty",
+      3
+    ],
+    [
+      "582119",
+      3
+    ],
+    [
+      "03",
+      3
+    ],
+    [
+      "02",
+      3
+    ]
+  ],
+  "documents": [
+    {
+      "doc_info": {
+        "id": 5,
+        "filename": "annapurna aadhar.pdf",
+        "file_type": "application/pdf",
+        "upload_date": "2026-03-23 14:44:37.642910"
+      },
+      "text_stats": {
+        "total_length": 660,
+        "total_words": 86,
+        "processed_keywords": 88,
+        "unique_keywords": 66,
+        "keyword_density": 1.023
+      },
+      "extracted_text": "ೂೕಂಣಸಂ/ Enrolment No.: 0000/00611/47671 To ಅನಪಟಶ Annapurna Pattanashetti W/O: Shivappa Pattana Shetty, VTC: Jakkali, PO: Jakkali, Sub District: Ron, District: Gadag, State: Karnataka, PIN Code: 582119, Mobile: 9986401058 7586 7293 5832 VID Details as on: 15/03/2026 Aadhaar no. issued: 02/10/2015 ಅನಪಟಶ Annapurna Pattanashetti ಜನದಾಂಕ/DOB: 15/07/1981 / FEMALE ವಾಸ: ತಯಹಸರು: ಟಶ, ಜಕಲ, ಜಕಳ, ಗಗ, ಕಾಟಕ- 582119 Address: W/O: Shivappa Pattana Shetty, Jakkali, PO: Jakkali, DIST: Gadag, Karnataka - 582119 VID Digitally signed by DS Unique Identification Authority of India 06 Date: 2026.03.15 21:25:37 IST Signature Not Verified",
+      "sample_text": "ೂೕಂಣಸಂ/ Enrolment No.: 0000/00611/47671 To ಅನಪಟಶ Annapurna Pattanashetti W/O: Shivappa Pattana Shetty, VTC: Jakkali, PO: Jakkali, Sub District: Ron, District: Gadag, State: Karnataka, PIN Code: 582119, Mobile: 9986401058 7586 7293 5832 VID Details as on: 15/03/2026 Aadhaar no. issued: 02...",
+      "all_keywords": [
+        "ಣಸ",
+        "enrolment",
+        "no",
+        "0000",
+        "00611",
+        "47671",
+        "ಅನ",
+        "annapurna",
+        "pattanashetti",
+        "shivappa",
+        "pattana",
+        "shetty",
+        "vtc",
+        "jakkali",
+        "po",
+        "jakkali",
+        "sub",
+        "district",
+        "ron",
+        "district",
+        "gadag",
+        "state",
+        "karnataka",
+        "pin",
+        "code",
+        "582119",
+        "mobile",
+        "9986401058",
+        "7586",
+        "7293",
+        "5832",
+        "vid",
+        "details",
+        "as",
+        "15",
+        "03",
+        "2026",
+        "aadhaar",
+        "no",
+        "issued",
+        "02",
+        "10",
+        "2015",
+        "ಅನ",
+        "annapurna",
+        "pattanashetti",
+        "ಜನ",
+        "dob",
+        "15",
+        "07",
+        "1981",
+        "female",
+        "ತಯಹಸರ",
+        "ಜಕ",
+        "ಜಕ",
+        "ಟಕ",
+        "582119",
+        "address",
+        "shivappa",
+        "pattana",
+        "shetty",
+        "jakkali",
+        "po",
+        "jakkali",
+        "dist",
+        "gadag",
+        "karnataka",
+        "582119",
+        "vid",
+        "digitally",
+        "signed",
+        "ds",
+        "unique",
+        "identification",
+        "authority",
+        "india",
+        "06",
+        "date",
+        "2026",
+        "03",
+        "15",
+        "21",
+        "25",
+        "37",
+        "ist",
+        "signature",
+        "not",
+        "verified"
+      ],
+      "top_keywords": [
+        [
+          "jakkali",
+          4
+        ],
+        [
+          "582119",
+          3
+        ],
+        [
+          "15",
+          3
+        ],
+        [
+          "no",
+          2
+        ],
+        [
+          "ಅನ",
+          2
+        ],
+        [
+          "annapurna",
+          2
+        ],
+        [
+          "pattanashetti",
+          2
+        ],
+        [
+          "shivappa",
+          2
+        ],
+        [
+          "pattana",
+          2
+        ],
+        [
+          "shetty",
+          2
+        ]
+      ],
+      "government_terms": []
+    },
+    {
+      "doc_info": {
+        "id": 4,
+        "filename": "Screenshot 2026-03-15 213440.png",
+        "file_type": "image/png",
+        "upload_date": "2026-03-23 14:44:37.559709"
+      },
+      "text_stats": {
+        "total_length": 436,
+        "total_words": 87,
+        "processed_keywords": 57,
+        "unique_keywords": 56,
+        "keyword_density": 0.655
+      },
+      "extracted_text": "eRRoror Bi 70383, Annapurna Pattanashetti 2, 80908/DOB: 15/07/1981 A FEMALE emo boda goadoinhd, WIZ, eda 3d, Omoodd Hood 6y, Adah, GAPS AF G,2ed0N Uae OR Bae’ / SHG ,A XML wa, NornAeoOrt arag, wvaitesd. Aadhaar is proof of identity, not of citizenship or date of birth. It should be used only with verification (online authentication or scanning of QR code / offline XML) 7586 7293 5832 re) a =) g Ss a q So 3 @ S a & io) < S @ © 5 by <",
+      "sample_text": "eRRoror Bi 70383, Annapurna Pattanashetti 2, 80908/DOB: 15/07/1981 A FEMALE emo boda goadoinhd, WIZ, eda 3d, Omoodd Hood 6y, Adah, GAPS AF G,2ed0N Uae OR Bae’ / SHG ,A XML wa, NornAeoOrt arag, wvaitesd. Aadhaar is proof of identity, not of citizenship or date of birth. It should be used only with ve...",
+      "all_keywords": [
+        "erroror",
+        "bi",
+        "70383",
+        "annapurna",
+        "pattanashetti",
+        "80908",
+        "dob",
+        "15",
+        "07",
+        "1981",
+        "female",
+        "emo",
+        "boda",
+        "goadoinhd",
+        "wiz",
+        "eda",
+        "3d",
+        "omoodd",
+        "hood",
+        "6y",
+        "adah",
+        "gaps",
+        "af",
+        "2ed0n",
+        "uae",
+        "bae",
+        "shg",
+        "xml",
+        "wa",
+        "nornaeoort",
+        "arag",
+        "wvaitesd",
+        "aadhaar",
+        "proof",
+        "identity",
+        "not",
+        "citizenship",
+        "date",
+        "birth",
+        "it",
+        "used",
+        "only",
+        "verification",
+        "online",
+        "authentication",
+        "scanning",
+        "qr",
+        "code",
+        "offline",
+        "xml",
+        "7586",
+        "7293",
+        "5832",
+        "re",
+        "ss",
+        "so",
+        "io"
+      ],
+      "top_keywords": [
+        [
+          "xml",
+          2
+        ],
+        [
+          "erroror",
+          1
+        ],
+        [
+          "bi",
+          1
+        ],
+        [
+          "70383",
+          1
+        ],
+        [
+          "annapurna",
+          1
+        ],
+        [
+          "pattanashetti",
+          1
+        ],
+        [
+          "80908",
+          1
+        ],
+        [
+          "dob",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "07",
+          1
+        ]
+      ],
+      "government_terms": []
+    },
+    {
+      "doc_info": {
+        "id": 3,
+        "filename": "10.pdf",
+        "file_type": "application/pdf",
+        "upload_date": "2026-02-14 16:45:41.944361"
+      },
+      "text_stats": {
+        "total_length": 1790,
+        "total_words": 289,
+        "processed_keywords": 241,
+        "unique_keywords": 191,
+        "keyword_density": 0.834
+      },
+      "extracted_text": "oafa arate fiat até CENTRAL BOARD OF SECONDARY EDUCATION sie frafirear Be wareT wt MARKS STATEMENT CUM CERTIFICATE , 2021 SECONDARY SCHOOL EXAMINATION, 2021 ae vanftra fest unre @ fs This is to certify that | ABHISHEK S SHAPPATS RollNo. 18160242 ‘TAT @T ATs Mother's Name — ANNAPOORNA PATANA SHETTY tra / Sizes wT Se Father's / Guardian's Name SHIVAPPA PATTANA SHETTI V ‘Test FART Date of Birth 02/10/2005 (2ND OCTOBER TWO THOUSAND FIVE) ferererer School SWAMI VIVEKANANDA CENTRAL SCH THELAGARAHALLI KK (45624) ot defers sunferat faeerqae has achieved Scholastic Achievements as under: farsa os ‘erst feat ERE ater ater (esata) SUBJECT SUBJECT NAME THEORY © \"easealmeitfrs = TOTAL TOTAL IN WORDS CODE INTERNAL ASSESSMENT / PRACTICAL 184 ENGLISH LNG & LIT. 019 EIGHTY ONE 085 HINDI COURSE-B. 020 SIXTY ONE 041 MATHEMATICS STANDARD 019 FIFTY THREE 086 SCIENCE 019 FORTY SEVEN 087 SOCIAL SCIENCE 019 SEVENTY TWO. Additional Subject: 015 KANNADA 017 SIXTY EIGHT ‘uufgvlTet RESULT: PASS . Digitally signed by: DigiLocker Controller of Examinations Rea as POSITIONAL GRADE B2 D1 c1 c2 c1 D1 Verified Gentral Board of Secondary Education Date: 02/07/2024 14:41:36 IST Date of declaration of result 03/08/2021 Note: 1. This mark sheet cum certificate is generated by DigiLocker (https://digilocker. gov.in) directly from CBSE's database. 2. This digitally signed document is legally valid as per the IT Act 2000 when used electronically. 3. To verify this mark sheet cum certificate, download DigiLocker Android application from Google Play and scan the QR code on the mark sheet cum certificate. 4. Result Legend: NE. - Not Eligible ABST - Absent R.W. - Result Withheld NAR. - Not Registered ‘SJD - Subjudice UFM - Unfair Means XXXK - Appeared for Improvement COMP - Compartment RL. - Result Later",
+      "sample_text": "oafa arate fiat até CENTRAL BOARD OF SECONDARY EDUCATION sie frafirear Be wareT wt MARKS STATEMENT CUM CERTIFICATE , 2021 SECONDARY SCHOOL EXAMINATION, 2021 ae vanftra fest unre @ fs This is to certify that | ABHISHEK S SHAPPATS RollNo. 18160242 ‘TAT @T ATs Mother's Name — ANNAPOORNA PATANA SHETTY t...",
+      "all_keywords": [
+        "oafa",
+        "arate",
+        "fiat",
+        "até",
+        "central",
+        "board",
+        "secondary",
+        "education",
+        "sie",
+        "frafirear",
+        "waret",
+        "wt",
+        "marks",
+        "statement",
+        "cum",
+        "certificate",
+        "2021",
+        "secondary",
+        "school",
+        "examination",
+        "2021",
+        "ae",
+        "vanftra",
+        "fest",
+        "unre",
+        "fs",
+        "certify",
+        "abhishek",
+        "shappats",
+        "rollno",
+        "18160242",
+        "tat",
+        "ats",
+        "mother",
+        "name",
+        "annapoorna",
+        "patana",
+        "shetty",
+        "tra",
+        "sizes",
+        "wt",
+        "se",
+        "father",
+        "guardian",
+        "name",
+        "shivappa",
+        "pattana",
+        "shetti",
+        "test",
+        "fart",
+        "date",
+        "birth",
+        "02",
+        "10",
+        "2005",
+        "2nd",
+        "october",
+        "two",
+        "thousand",
+        "five",
+        "ferererer",
+        "school",
+        "swami",
+        "vivekananda",
+        "central",
+        "sch",
+        "thelagarahalli",
+        "kk",
+        "45624",
+        "ot",
+        "defers",
+        "sunferat",
+        "faeerqae",
+        "achieved",
+        "scholastic",
+        "achievements",
+        "as",
+        "under",
+        "farsa",
+        "os",
+        "erst",
+        "feat",
+        "ere",
+        "ater",
+        "ater",
+        "esata",
+        "subject",
+        "subject",
+        "name",
+        "theory",
+        "easealmeitfrs",
+        "total",
+        "total",
+        "words",
+        "code",
+        "internal",
+        "assessment",
+        "practical",
+        "184",
+        "english",
+        "lng",
+        "lit",
+        "019",
+        "eighty",
+        "one",
+        "085",
+        "hindi",
+        "course",
+        "020",
+        "sixty",
+        "one",
+        "041",
+        "mathematics",
+        "standard",
+        "019",
+        "fifty",
+        "three",
+        "086",
+        "science",
+        "019",
+        "forty",
+        "seven",
+        "087",
+        "social",
+        "science",
+        "019",
+        "seventy",
+        "two",
+        "additional",
+        "subject",
+        "015",
+        "kannada",
+        "017",
+        "sixty",
+        "eight",
+        "uufgvltet",
+        "result",
+        "pass",
+        "digitally",
+        "signed",
+        "digilocker",
+        "controller",
+        "examinations",
+        "rea",
+        "as",
+        "positional",
+        "grade",
+        "b2",
+        "d1",
+        "c1",
+        "c2",
+        "c1",
+        "d1",
+        "verified",
+        "gentral",
+        "board",
+        "secondary",
+        "education",
+        "date",
+        "02",
+        "07",
+        "2024",
+        "14",
+        "41",
+        "36",
+        "ist",
+        "date",
+        "declaration",
+        "result",
+        "03",
+        "08",
+        "2021",
+        "note",
+        "mark",
+        "sheet",
+        "cum",
+        "certificate",
+        "generated",
+        "digilocker",
+        "https",
+        "digilocker",
+        "gov",
+        "directly",
+        "cbse",
+        "database",
+        "digitally",
+        "signed",
+        "document",
+        "legally",
+        "valid",
+        "as",
+        "per",
+        "it",
+        "act",
+        "2000",
+        "when",
+        "used",
+        "electronically",
+        "verify",
+        "mark",
+        "sheet",
+        "cum",
+        "certificate",
+        "download",
+        "digilocker",
+        "android",
+        "application",
+        "google",
+        "play",
+        "scan",
+        "qr",
+        "code",
+        "mark",
+        "sheet",
+        "cum",
+        "certificate",
+        "result",
+        "legend",
+        "ne",
+        "not",
+        "eligible",
+        "abst",
+        "absent",
+        "result",
+        "withheld",
+        "nar",
+        "not",
+        "registered",
+        "sjd",
+        "subjudice",
+        "ufm",
+        "unfair",
+        "means",
+        "xxxk",
+        "appeared",
+        "improvement",
+        "comp",
+        "compartment",
+        "rl",
+        "result",
+        "later"
+      ],
+      "top_keywords": [
+        [
+          "result",
+          5
+        ],
+        [
+          "cum",
+          4
+        ],
+        [
+          "certificate",
+          4
+        ],
+        [
+          "019",
+          4
+        ],
+        [
+          "digilocker",
+          4
+        ],
+        [
+          "secondary",
+          3
+        ],
+        [
+          "2021",
+          3
+        ],
+        [
+          "name",
+          3
+        ],
+        [
+          "date",
+          3
+        ],
+        [
+          "as",
+          3
+        ]
+      ],
+      "government_terms": [
+        "document",
+        "act"
+      ]
+    },
+    {
+      "doc_info": {
+        "id": 2,
+        "filename": "WhatsApp Image 2026-02-12 at 18.28.16.jpeg",
+        "file_type": "image/jpeg",
+        "upload_date": "2026-02-14 16:45:41.881054"
+      },
+      "text_stats": {
+        "total_length": 234,
+        "total_words": 39,
+        "processed_keywords": 34,
+        "unique_keywords": 33,
+        "keyword_density": 0.872
+      },
+      "extracted_text": "Woes roa ss Mas nen ELECTION COMMISSION OF INDIA = HIV? Parlin roca Ue. Elector Phote Wentity Card QLP0395756 tide: eXatee! ov Name: Abhishek S Bodad szich: bets duynett Father's Name: Shivappa Pattanashott) Oorl / Gender: rio) / Male",
+      "sample_text": "Woes roa ss Mas nen ELECTION COMMISSION OF INDIA = HIV? Parlin roca Ue. Elector Phote Wentity Card QLP0395756 tide: eXatee! ov Name: Abhishek S Bodad szich: bets duynett Father's Name: Shivappa Pattanashott) Oorl / Gender: rio) / Male",
+      "all_keywords": [
+        "woes",
+        "roa",
+        "ss",
+        "mas",
+        "nen",
+        "election",
+        "commission",
+        "india",
+        "hiv",
+        "parlin",
+        "roca",
+        "ue",
+        "elector",
+        "phote",
+        "wentity",
+        "card",
+        "qlp0395756",
+        "tide",
+        "exatee",
+        "ov",
+        "name",
+        "abhishek",
+        "bodad",
+        "szich",
+        "bets",
+        "duynett",
+        "father",
+        "name",
+        "shivappa",
+        "pattanashott",
+        "oorl",
+        "gender",
+        "rio",
+        "male"
+      ],
+      "top_keywords": [
+        [
+          "name",
+          2
+        ],
+        [
+          "woes",
+          1
+        ],
+        [
+          "roa",
+          1
+        ],
+        [
+          "ss",
+          1
+        ],
+        [
+          "mas",
+          1
+        ],
+        [
+          "nen",
+          1
+        ],
+        [
+          "election",
+          1
+        ],
+        [
+          "commission",
+          1
+        ],
+        [
+          "india",
+          1
+        ],
+        [
+          "hiv",
+          1
+        ]
+      ],
+      "government_terms": []
+    },
+    {
+      "doc_info": {
+        "id": 1,
+        "filename": "WhatsApp Image 2026-02-12 at 18.28.16 (1) - Copy.jpeg",
+        "file_type": "image/jpeg",
+        "upload_date": "2026-02-14 16:45:41.823837"
+      },
+      "text_stats": {
+        "total_length": 85,
+        "total_words": 16,
+        "processed_keywords": 8,
+        "unique_keywords": 8,
+        "keyword_density": 0.5
+      },
+      "extracted_text": "INCOME TAX DEPARTMENT @®_—s-s GOVT. OF INDIA . =e . SHIVAPPS PATTANASHETTY — i EKS “a",
+      "sample_text": "INCOME TAX DEPARTMENT @®_—s-s GOVT. OF INDIA . =e . SHIVAPPS PATTANASHETTY — i EKS “a",
+      "all_keywords": [
+        "income",
+        "tax",
+        "department",
+        "govt",
+        "india",
+        "shivapps",
+        "pattanashetty",
+        "eks"
+      ],
+      "top_keywords": [
+        [
+          "income",
+          1
+        ],
+        [
+          "tax",
+          1
+        ],
+        [
+          "department",
+          1
+        ],
+        [
+          "govt",
+          1
+        ],
+        [
+          "india",
+          1
+        ],
+        [
+          "shivapps",
+          1
+        ],
+        [
+          "pattanashetty",
+          1
+        ],
+        [
+          "eks",
+          1
+        ]
+      ],
+      "government_terms": []
+    }
+  ]
+}

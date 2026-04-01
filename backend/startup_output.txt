@@ -1,0 +1,57 @@
+INFO:     Started server process [27740]
+INFO:     Waiting for application startup.
+2026-03-24 18:36:54,606 - main - INFO - Starting SearchX API...
+Starting server on 0.0.0.0:8000
+RELOAD setting: False
+2026-03-24 18:36:54,607 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-24 18:36:54,607 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-03-24 18:36:54,607 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("media_files")
+2026-03-24 18:36:54,607 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("media_files")
+2026-03-24 18:36:54,607 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-24 18:36:54,607 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-03-24 18:36:54,608 INFO sqlalchemy.engine.Engine COMMIT
+2026-03-24 18:36:54,608 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-03-24 18:36:54,611 - database - INFO - Database initialized successfully
+2026-03-24 18:36:54,611 - services.search_service - INFO - Initializing search service...
+2026-03-24 18:36:54,611 - services.embedding_service - INFO - Loading embedding model: sentence-transformers/all-mpnet-base-v2
+2026-03-24 18:36:54,611 - services.embedding_service - INFO - Using device: cpu
+2026-03-24 18:36:54,615 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  5.12it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  5.12it/s]
+2026-03-24 18:37:01,361 - services.embedding_service - INFO - Model loaded successfully. Embedding dimension: 768
+2026-03-24 18:37:01,362 - services.vector_index_service - INFO - Loading existing FAISS index...
+2026-03-24 18:37:01,385 - services.vector_index_service - INFO - Loaded index with 51 vectors
+2026-03-24 18:37:01,385 - services.hybrid_search_service - INFO - Initializing hybrid search service...
+2026-03-24 18:37:01,385 - services.embedding_service - INFO - Loading embedding model: sentence-transformers/all-mpnet-base-v2
+2026-03-24 18:37:01,385 - services.embedding_service - INFO - Using device: cpu
+2026-03-24 18:37:01,390 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  5.71it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  5.70it/s]
+2026-03-24 18:37:06,462 - services.embedding_service - INFO - Model loaded successfully. Embedding dimension: 768
+2026-03-24 18:37:06,462 - services.vector_index_service - INFO - Loading existing FAISS index...
+2026-03-24 18:37:06,463 - services.vector_index_service - INFO - Loaded index with 51 vectors
+2026-03-24 18:37:06,463 - services.hybrid_search_service - INFO - Loading existing BM25 index...
+2026-03-24 18:37:06,466 - services.hybrid_search_service - INFO - Loaded BM25 index with 5 documents
+2026-03-24 18:37:06,466 - services.hybrid_search_service - INFO - Hybrid search service initialized successfully
+2026-03-24 18:37:06,468 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-24 18:37:06,468 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-03-24 18:37:06,473 INFO sqlalchemy.engine.Engine SELECT count(*) AS count_1 
+FROM (SELECT media_files.id AS media_files_id, media_files.original_filename AS media_files_original_filename, media_files.stored_filename AS media_files_stored_filename, media_files.file_path AS media_files_file_path, media_files.thumbnail_path AS media_files_thumbnail_path, media_files.file_type AS media_files_file_type, media_files.file_size AS media_files_file_size, media_files.file_hash AS media_files_file_hash, media_files.extracted_text AS media_files_extracted_text, media_files.processing_status AS media_files_processing_status, media_files.processing_error AS media_files_processing_error, media_files.upload_date AS media_files_upload_date, media_files.processed_date AS media_files_processed_date, media_files.embedding_id AS media_files_embedding_id, media_files.has_embedding AS media_files_has_embedding 
+FROM media_files 
+WHERE media_files.processing_status = ? AND media_files.extracted_text IS NOT NULL AND media_files.has_embedding = ?) AS anon_1
+2026-03-24 18:37:06,473 - sqlalchemy.engine.Engine - INFO - SELECT count(*) AS count_1 
+FROM (SELECT media_files.id AS media_files_id, media_files.original_filename AS media_files_original_filename, media_files.stored_filename AS media_files_stored_filename, media_files.file_path AS media_files_file_path, media_files.thumbnail_path AS media_files_thumbnail_path, media_files.file_type AS media_files_file_type, media_files.file_size AS media_files_file_size, media_files.file_hash AS media_files_file_hash, media_files.extracted_text AS media_files_extracted_text, media_files.processing_status AS media_files_processing_status, media_files.processing_error AS media_files_processing_error, media_files.upload_date AS media_files_upload_date, media_files.processed_date AS media_files_processed_date, media_files.embedding_id AS media_files_embedding_id, media_files.has_embedding AS media_files_has_embedding 
+FROM media_files 
+WHERE media_files.processing_status = ? AND media_files.extracted_text IS NOT NULL AND media_files.has_embedding = ?) AS anon_1
+2026-03-24 18:37:06,473 INFO sqlalchemy.engine.Engine [generated in 0.00033s] ('SUCCESS', 0)
+2026-03-24 18:37:06,473 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] ('SUCCESS', 0)
+2026-03-24 18:37:06,473 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-24 18:37:06,473 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-03-24 18:37:06,474 - services.search_service - INFO - Search service initialized successfully
+2026-03-24 18:37:06,474 - main - INFO - SearchX API started successfully
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+2026-03-24 18:37:06,474 - main - INFO - Shutting down SearchX API...
+2026-03-24 18:37:06,476 - services.hybrid_search_service - INFO - Hybrid search service cleanup complete
+2026-03-24 18:37:06,476 - services.search_service - INFO - Search service cleanup complete
+2026-03-24 18:37:06,476 - main - INFO - SearchX API shutdown complete
+INFO:     Application shutdown complete.

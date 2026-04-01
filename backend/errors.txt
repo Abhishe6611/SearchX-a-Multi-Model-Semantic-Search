@@ -1,0 +1,3 @@
+WhatsApp Image 2026-02-12 at 18.28.16.jpeg|||Text extraction error: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=120)
+10.pdf|||None
+Screenshot 2026-03-15 213440.png|||Text extraction error: expected string or bytes-like object, got 'NoneType'

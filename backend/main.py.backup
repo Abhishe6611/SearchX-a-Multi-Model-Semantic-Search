@@ -1,0 +1,309 @@
+"""
+SearchX - Semantic Media Search System
+Main FastAPI Application
+"""
+import os
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, JSONResponse
+from typing import List, Optional, Dict, Any
+import logging
+from datetime import datetime, timezone
+from sqlalchemy.orm import Session
+
+from database import init_db, get_db
+from models import MediaFile, ProcessingStatus
+from services.upload_service import UploadService
+from services.search_service import SearchService
+from services.thumbnail_service import ThumbnailService
+from config import settings
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = loggservices
+upload_service = UploadService()
+search_service = SearchService()
+thumbnail_service = ThumbnailService()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Lifespan context manager for startup and shutdown events"""
+    # Startup
+    logger.info("Starting SearchX API...")
+    init_db()
+    await search_service.initialize()
+    logger.info("SearchX API started successfully")
+    
+    yield
+    
+    # Shutdown
+    logger.info("Shutting down SearchX API...")
+    await search_service.cleanup()
+    logger.info("SearchX API shutdown complete")
+
+
+# Initialize FastAPI app
+app = FastAPI(
+
+@app.get("/")
+async def root() -> Dict[str, Any]vices
+upload_service = UploadService()
+search_service = SearchService()
+thumbnail_service = ThumbnailService()
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize database and services on startup"""
+    logger.info("Starting SearchX API...")
+    init_db()
+    await search_service.initialize()
+    logger.info("SearchX API started successfully")
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Cleanup on shutdown"""
+    logger.info("Shutting down SearchX API...")
+    await search_service.cleanup()
+    logger.info("SearchX API shutdown complete")
+
+
+@app.get("/")
+async def root():
+    """Health check endpoint"""
+    return {
+        "status": "online",
+        "service": "SearchX API",
+        "version": "1.0.0",
+        "timestamp": datetime.utcnow().isoformat()
+    }
+
+
+@app.post("/api/upload", response_model=dict)
+async def upload_files(files: List[UploadFile] = File(...)):
+    """
+    Upload multiple media files (images/documents)
+    Returns list of uploaded files with their processing status
+    """
+    try:
+        logger.info(f"Received {len(files)} files for upload")
+        results = await upload_service.process_uploads(files)
+        
+        return {
+            "success": True,
+            "message": f"Successfully processed {len(results)} files",
+            "files": results
+        }
+    except Exception as e:
+        logger.error(f"Upload error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
+
+
+@app.get("/api/files")
+async def get_files(
+    skip: int = Query(0, ge=0),
+    limit: int = Query(100, ge=1, le=500),
+    status: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Get list of all uploaded files with optional status filter
+    """
+    try:
+        db_gen = get_db()
+        db: Session = next(db_gen)
+        try:
+            query = db.query(MediaFile)
+            
+            if status:
+                query = query.filter(MediaFile.processing_status == status)
+            
+            total: int = query.count()
+            files: List[MediaFile] = query.order_by(MediaFile.upload_date.desc()).offset(skip).limit(limit).all()
+            
+            return {
+                "success": True,
+                "total": total,
+                "skip": skip,
+                "limit": limit,
+                "files": [file.to_dict() for file in files]
+            }
+        finally:
+            db.close()
+    except Exception as e:
+        logger.error(f"Error fe)
+async def get_file(file_id: int) -> Dict[str, Any]:
+    """Get details of a specific file"""
+    try:
+        db_gen = get_db()
+        db: Session = next(db_gen)
+        try:
+            file: Optional[MediaFile] = db.query(MediaFile).filter(MediaFile.id == file_id).first()
+            
+            if not file:
+                raise HTTPException(status_code=404, detail="File not found")
+            
+            return {
+                "success": True,
+                "file": file.to_dict()
+            }
+        finally:
+            db.close()
+        return {
+            "success": True,
+            "file": file.to_dict()
+        })
+async def delete_file(file_id: int) -> Dict[str, Any]:
+    """Delete a file and all associated data"""
+    db_gen = get_db()
+    db: Session = next(db_gen)
+    try:
+        file: Optional[MediaFile] = db.query(MediaFile).filter(MediaFile.id == file_id).first()
+        
+        if not file:
+            raise HTTPException(status_code=404, detail="File not found")
+        
+        # Delete physical files
+        if os.path.exists(file.file_path):
+            os.remove(file.file_path)
+            logger.info(f"Deleted file: {file.file_path}")
+        
+        if file.thumbnail_path and os.path.exists(file.thumbnail_path):
+            os.remove(file.thumbnail_path)
+            logger.info(f"Deleted thumbnail: {file.thumbnail_path}")
+        
+        # Remove from vector index
+        await search_service.remove_from_index(file_id)
+        
+        # Delete from database
+        db.delete(file)
+        db.commit()
+        
+        logger.info(f"Successfully deleted file {file_id}")
+        return {
+            "success": True,
+            "message": "File deleted successfully"
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error deleting file {file_id}: {str(e)}", exc_info=True)
+        db.rollback()
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        db.close()
+async def search(query: str = Query(..., min_length=1), limit: int = Query(20, ge=1, le=100)) -> Dict[str, Any]:
+    """
+    Semantic search across all media files
+    Returns ranked results by relevance
+    """
+    try:
+        logger.info(f"Search query: '{query}' (limit: {limit})")
+        results: List[Dict[str, Any]]TTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/search", response_model=dict)
+async def search(query: str = Query(..., min_length=1), limit: int = Query(20, ge=1, le=100)):
+    """
+    Semantic search across all media files
+    Returns ranked results by relevance
+    """
+    try:
+        logger.info(f"Search query: '{query}' (limit: {limit})")
+        results = await search_service.search(query, limit)
+        
+        return {
+            "success": True, -> FileResponse:
+    """Download original file"""
+    try:
+        db_gen = get_db()
+        db: Session = next(db_gen)
+        try:
+            file: Optional[MediaFile] = db.query(MediaFile).filter(MediaFile.id == file_id).first()
+            
+            if not file or not os.path.exists(file.file_path):
+                raise HTTPException(status_code=404, detail="File not found")
+            
+            return FileResponse(
+                path=file.file_path,
+                filename=file.original_filename,
+                media_type='application/octet-stream'
+            )
+        finally:
+            db.close(
+        db = next(get_db())
+        file = db.query(MediaFile).filter(MediaFile.id == file_id).first()
+        
+        if not file or not os.path.exists(file.file_path):
+            raise HTTPException(status_code=404, detail="File not found")
+        
+        return FileResponse(
+            path=file)
+async def get_stats() -> Dict[str, Any]:
+    """Get system statistics"""
+    try:
+        db_gen = get_db()
+        db: Session = next(db_gen)
+        try:
+            total_files: int = db.query(MediaFile).count()
+            success_count: int = db.query(MediaFile).filter(
+                MediaFile.processing_status == ProcessingStatus.SUCCESS
+            ).count()
+            failed_count: int = db.query(MediaFile).filter(
+                MediaFile.processing_status == ProcessingStatus.FAILED
+            ).count()
+            pending_count: int = db.query(MediaFile).filter(
+                MediaFile.processing_status == ProcessingStatus.PENDING
+            ).count()
+            
+            images_count: int = db.query(MediaFile).filter(
+                MediaFile.file_type.in_(['image/jpeg', 'image/png', 'image/webp'])
+            ).count()
+            
+            docs_count: int = db.query(MediaFile).filter(
+                MediaFile.file_type.in_(['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'])
+            ).count()
+            
+            return {
+                "success": True,
+                "stats": {
+                    "total_files": total_files,
+                    "processed": success_count,
+                    "failed": failed_count,
+                    "pending": pending_count,
+                    "images": images_count,
+                    "documents": docs_count
+                }
+            }
+        finally:
+            db.close()
+        return {
+            "success": True,
+            "stats": {
+                "total_files": total_files,
+                "processed": success_count,
+                "failed": failed_count,
+                "pending": pending_count,
+                "images": images_count,
+                "documents": docs_count
+            }
+        }
+    except Exception as e:
+        logger.error(f"Stats error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host=settings.HOST,
+        port=settings.PORT,
+        reload=settings.DEBUG
+    )
