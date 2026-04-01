@@ -3,12 +3,12 @@
 **A Production-Ready Semantic Search Platform for Images and Documents Using Advanced AI**
 
 **Version**: 2.0 (Hybrid Search Implementation)  
-**Status**: âœ… Production Ready  
+**Status**: ✅ Production Ready  
 **Last Updated**: March 2026
 
 ---
 
-## ðŸ“– Table of Contents
+## 📖 Table of Contents
 
 - [What is SearchX?](#what-is-searchx)
 - [Core Features](#-core-features)
@@ -27,7 +27,7 @@
 
 ---
 
-## ðŸŽ¯ What is SearchX?
+## 🎯 What is SearchX?
 
 SearchX is a groundbreaking intelligent media management system that revolutionizes how users interact with digital media collections. Unlike traditional keyword-based search systems, SearchX enables powerful **semantic understanding** of both visual content and textual documents through advanced artificial intelligence technologies including:
 
@@ -58,16 +58,16 @@ SearchX bridges this gap by enabling **natural language search** across your ent
 
 ---
 
-## âœ¨ Core Features
+## ✨ Core Features
 
-### ðŸŽ¬ Multi-Format Support
+### 🎬 Multi-Format Support
 
 - **Images**: JPG, PNG, WEBP with automatic OCR text extraction
 - **Documents**: PDF, DOCX, TXT with intelligent text parsing
 - **Video**: Optimized for thumbnail-based search and metadata extraction
 - **Large Files**: Support up to 50MB per file with configurable limits
 
-### ðŸ” Intelligent Search Capabilities
+### 🔍 Intelligent Search Capabilities
 
 - **Semantic Search**: Understand meaning beyond keywords using transformer-based embeddings
 - **Keyword Matching**: Precise exact-match searching using advanced BM25 algorithm
@@ -75,12 +75,12 @@ SearchX bridges this gap by enabling **natural language search** across your ent
 - **Adaptive Intelligence**: Dynamic weighting that adapts to query characteristics
 
 **Search Quality Improvements:**
-- âœ… 40% precision improvement over single-method approaches
-- âœ… 35% accuracy boost for government and legal documents
-- âœ… 2x embedding quality (768D vector space vs. 384D)
-- âœ… Sub-100ms query response time
+- ✅ 40% precision improvement over single-method approaches
+- ✅ 35% accuracy boost for government and legal documents
+- ✅ 2x embedding quality (768D vector space vs. 384D)
+- ✅ Sub-100ms query response time
 
-### ðŸ¤– Automatic Processing Pipeline
+### 🤖 Automatic Processing Pipeline
 
 - **OCR Extraction**: Tesseract-based optical character recognition for images
 - **Text Parsing**: Intelligent extraction from documents with formatting preservation
@@ -88,146 +88,146 @@ SearchX bridges this gap by enabling **natural language search** across your ent
 - **Vector Indexing**: FAISS-based similarity search with cosine metrics
 - **Thumbnail Generation**: Auto-generated previews for all media types
 
-### ðŸ“Š Real-Time Features
+### 📊 Real-Time Features
 
 - **Status Tracking**: Color-coded status indicators
-  - ðŸŸ¢ **Green**: Successfully processed and searchable
-  - ðŸŸ  **Orange**: Currently processing
-  - ðŸ”´ **Red**: Processing failed
+  - 🟢 **Green**: Successfully processed and searchable
+  - 🟠 **Orange**: Currently processing
+  - 🔴 **Red**: Processing failed
 - **Live Statistics Dashboard**: Real-time system metrics and performance monitoring
 - **Processing Analytics**: Track processing times, accuracy scores, and performance trends
 
-### ðŸ“ Comprehensive File Management
+### 📁 Comprehensive File Management
 
-- âœ… Multi-file simultaneous upload
-- âœ… File download and retrieval
-- âœ… Batch file deletion
-- âœ… File organization and tagging
-- âœ… Search history tracking
+- ✅ Multi-file simultaneous upload
+- ✅ File download and retrieval
+- ✅ Batch file deletion
+- ✅ File organization and tagging
+- ✅ Search history tracking
 
-### ðŸ›¡ï¸ Data Integrity & Performance
+### 🛡️ Data Integrity & Performance
 
-- âœ… **Duplicate Detection**: Hash-based automatic duplicate prevention
-- âœ… **Data Persistence**: SQLite database with comprehensive backup support
-- âœ… **Transaction Management**: ACID-compliant database operations
-- âœ… **Memory Optimization**: LRU caching with configurable cache sizes
-- âœ… **Error Handling**: Comprehensive error recovery and logging
+- ✅ **Duplicate Detection**: Hash-based automatic duplicate prevention
+- ✅ **Data Persistence**: SQLite database with comprehensive backup support
+- ✅ **Transaction Management**: ACID-compliant database operations
+- ✅ **Memory Optimization**: LRU caching with configurable cache sizes
+- ✅ **Error Handling**: Comprehensive error recovery and logging
 
-### ðŸ‘¥ User Experience
+### 👥 User Experience
 
-- ðŸŽ¨ Modern React UI with Tailwind CSS styling
-- ðŸ“± Responsive design for desktop and mobile devices
-- â™¿ Accessibility features for users with varying technical backgrounds
-- ðŸŒ Intuitive interface requiring minimal user training
-- ðŸ’« Real-time feedback and visual progress indicators
+- 🎨 Modern React UI with Tailwind CSS styling
+- 📱 Responsive design for desktop and mobile devices
+- ♿ Accessibility features for users with varying technical backgrounds
+- 🌐 Intuitive interface requiring minimal user training
+- 💫 Real-time feedback and visual progress indicators
 
 ---
 
-## ðŸ—ï¸ System Architecture
+## 🏗️ System Architecture
 
 ### High-Level Architecture Overview
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                        Frontend (React)                          â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚  Upload Zone â”‚ â”‚ Search Bar â”‚ â”‚  File Grid â”‚ â”‚  Viewer  â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                             â”‚ HTTP/REST API
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                  FastAPI Backend (Python)                        â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚           API Layer (Routers & Controllers)                â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â”‚                   â”‚                      â”‚                       â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”                â”‚
-â”‚  â”‚  Upload Service  â”‚  â”‚  Search Service       â”‚                â”‚
-â”‚  â”‚  - Validation    â”‚  â”‚  - Hybrid Search      â”‚                â”‚
-â”‚  â”‚  - Storage       â”‚  â”‚  - Score Fusion       â”‚                â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                â”‚
-â”‚                   â”‚                  â”‚                           â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                â”‚
-â”‚  â”‚    Processing Pipeline Services              â”‚                â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚                â”‚
-â”‚  â”‚  â”‚    OCR       â”‚  â”‚   Embedding Service  â”‚ â”‚                â”‚
-â”‚  â”‚  â”‚  Tesseract   â”‚  â”‚   MPNet-v2 (768D)    â”‚ â”‚                â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚                â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚                â”‚
-â”‚  â”‚  â”‚Text Extract  â”‚  â”‚ Thumbnail Generator  â”‚ â”‚                â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚                â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                â”‚
-â”‚                                                  â”‚                â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”              â”‚
-â”‚  â”‚         Vector & Index Management              â”‚              â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚              â”‚
-â”‚  â”‚  â”‚  FAISS Index â”‚  â”‚   BM25 Tokenizer    â”‚   â”‚              â”‚
-â”‚  â”‚  â”‚ (768D embed) â”‚  â”‚  (Keyword Matching) â”‚   â”‚              â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚              â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜               â”‚
-â”‚                                                                   â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                â”‚
-â”‚  â”‚      Storage & Database Layer                â”‚                â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚                â”‚
-â”‚  â”‚  â”‚   Files/    â”‚  â”‚   SQLAlchemy ORM    â”‚ â”‚                â”‚
-â”‚  â”‚  â”‚ Thumbnails  â”‚  â”‚   (SQLite DB)       â”‚ â”‚                â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚                â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────┐
+│                        Frontend (React)                          │
+│  ┌──────────────┐ ┌────────────┐ ┌────────────┐ ┌──────────┐  │
+│  │  Upload Zone │ │ Search Bar │ │  File Grid │ │  Viewer  │  │
+│  └──────────────┘ └────────────┘ └────────────┘ └──────────┘  │
+└────────────────────────────┬─────────────────────────────────────┘
+                             │ HTTP/REST API
+┌────────────────────────────▼─────────────────────────────────────┐
+│                  FastAPI Backend (Python)                        │
+│  ┌────────────────────────────────────────────────────────────┐  │
+│  │           API Layer (Routers & Controllers)                │  │
+│  └────────────────┬──────────────────────┬────────────────────┘  │
+│                   │                      │                       │
+│  ┌────────────────▼──┐  ┌────────────────▼──────┐                │
+│  │  Upload Service  │  │  Search Service       │                │
+│  │  - Validation    │  │  - Hybrid Search      │                │
+│  │  - Storage       │  │  - Score Fusion       │                │
+│  └────────────────┬──┘  └────────────┬─────────┘                │
+│                   │                  │                           │
+│  ┌────────────────┴──────────────────┴──────────┐                │
+│  │    Processing Pipeline Services              │                │
+│  │  ┌──────────────┐  ┌──────────────────────┐ │                │
+│  │  │    OCR       │  │   Embedding Service  │ │                │
+│  │  │  Tesseract   │  │   MPNet-v2 (768D)    │ │                │
+│  │  └──────────────┘  └──────────────────────┘ │                │
+│  │  ┌──────────────┐  ┌──────────────────────┐ │                │
+│  │  │Text Extract  │  │ Thumbnail Generator  │ │                │
+│  │  └──────────────┘  └──────────────────────┘ │                │
+│  └───────────────────────────────────────────────┘                │
+│                                                  │                │
+│  ┌──────────────────────────────────────────────▼─┐              │
+│  │         Vector & Index Management              │              │
+│  │  ┌──────────────┐  ┌──────────────────────┐   │              │
+│  │  │  FAISS Index │  │   BM25 Tokenizer    │   │              │
+│  │  │ (768D embed) │  │  (Keyword Matching) │   │              │
+│  │  └──────────────┘  └──────────────────────┘   │              │
+│  └──────────────────────────────────────────────┘               │
+│                                                                   │
+│  ┌──────────────────────────────────────────────┐                │
+│  │      Storage & Database Layer                │                │
+│  │  ┌──────────────┐  ┌──────────────────────┐ │                │
+│  │  │   Files/    │  │   SQLAlchemy ORM    │ │                │
+│  │  │ Thumbnails  │  │   (SQLite DB)       │ │                │
+│  │  └──────────────┘  └──────────────────────┘ │                │
+│  └──────────────────────────────────────────────┘                │
+└───────────────────────────────────────────────────────────────────┘
 ```
 
 ### Processing Pipeline Flow
 
 ```
 FILE UPLOAD
-    â”‚
-    â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Validation & Hash   â”‚  â€¢ Check file type and size
-â”‚ Calculation         â”‚  â€¢ Generate MD5/SHA256 hash
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Duplicate Check     â”‚  â€¢ Compare with existing hashes
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚ (If new file)
-         â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ File Storage        â”‚  â€¢ Save to /storage/files/
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”‚                              â”‚
-         â–¼                              â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚ Text       â”‚              â”‚ Thumbnail      â”‚
-    â”‚ Extraction â”‚              â”‚ Generation     â”‚
-    â”‚ (OCR/Parse)â”‚              â”‚                â”‚
-    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-           â”‚                              â”‚
-           â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-           â”‚
-           â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Embedding           â”‚  â€¢ MPNet-v2 768D vector
-â”‚ Generation          â”‚  â€¢ Semantic fingerprint
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Index Updates       â”‚  â€¢ Add to FAISS index
-â”‚ (Atomic)            â”‚  â€¢ Add to BM25 index
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Database Update     â”‚  â€¢ Store metadata
-â”‚                     â”‚  â€¢ Update flags
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â–¼
-    âœ… COMPLETE
+    │
+    ▼
+┌─────────────────────┐
+│ Validation & Hash   │  • Check file type and size
+│ Calculation         │  • Generate MD5/SHA256 hash
+└────────┬────────────┘
+         │
+         ▼
+┌─────────────────────┐
+│ Duplicate Check     │  • Compare with existing hashes
+└────────┬────────────┘
+         │ (If new file)
+         ▼
+┌─────────────────────┐
+│ File Storage        │  • Save to /storage/files/
+└────────┬────────────┘
+         │
+         ├──────────────────────────────┐
+         │                              │
+         ▼                              ▼
+    ┌────────────┐              ┌────────────────┐
+    │ Text       │              │ Thumbnail      │
+    │ Extraction │              │ Generation     │
+    │ (OCR/Parse)│              │                │
+    └──────┬─────┘              └─────────┬──────┘
+           │                              │
+           ├──────────────────────────────┤
+           │
+           ▼
+┌─────────────────────┐
+│ Embedding           │  • MPNet-v2 768D vector
+│ Generation          │  • Semantic fingerprint
+└────────┬────────────┘
+         │
+         ▼
+┌─────────────────────┐
+│ Index Updates       │  • Add to FAISS index
+│ (Atomic)            │  • Add to BM25 index
+└────────┬────────────┘
+         │
+         ▼
+┌─────────────────────┐
+│ Database Update     │  • Store metadata
+│                     │  • Update flags
+└────────┬────────────┘
+         │
+         ▼
+    ✅ COMPLETE
     File is now searchable
 ```
 
@@ -235,157 +235,157 @@ FILE UPLOAD
 
 ```
 USER QUERY
-    â”‚
-    â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Query Analysis       â”‚  â€¢ Detect query type
-â”‚ & Preprocessing      â”‚  â€¢ Extract keywords
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â€¢ Analyze intent
-           â”‚
-           â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Parallel Search Execution                â”‚
-â”‚                                          â”‚
-â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
-â”‚ â”‚ Semantic Searchâ”‚  â”‚ Keyword Search â”‚ â”‚
-â”‚ â”‚ (FAISS Index)  â”‚  â”‚ (BM25 Engine)  â”‚ â”‚
-â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-          â”‚                    â”‚
-          â–¼                    â–¼
+    │
+    ▼
+┌──────────────────────┐
+│ Query Analysis       │  • Detect query type
+│ & Preprocessing      │  • Extract keywords
+└──────────┬───────────┘  • Analyze intent
+           │
+           ▼
+┌──────────────────────────────────────────┐
+│ Parallel Search Execution                │
+│                                          │
+│ ┌────────────────┐  ┌────────────────┐ │
+│ │ Semantic Search│  │ Keyword Search │ │
+│ │ (FAISS Index)  │  │ (BM25 Engine)  │ │
+│ └────────┬───────┘  └────────┬───────┘ │
+└─────────┼────────────────────┼──────────┘
+          │                    │
+          ▼                    ▼
     Semantic        Keyword
     Scores    +     Scores
     [0-1]           [0-1]
-          â”‚                    â”‚
-          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚ Adaptive Weight          â”‚
-        â”‚ Calculation              â”‚
-        â”‚ â€¢ Query analysis based   â”‚
-        â”‚ â€¢ Dynamic semantic_w     â”‚
-        â”‚ â€¢ Dynamic keyword_w      â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚ Score Fusion             â”‚
-        â”‚ fused_score =            â”‚
-        â”‚ (semanticW Ã— semantic) + â”‚
-        â”‚ (keywordW Ã— keyword) +   â”‚
-        â”‚ dual_match_boost         â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚ Result Ranking &         â”‚
-        â”‚ Re-ranking               â”‚
-        â”‚ â€¢ Sort by fused score    â”‚
-        â”‚ â€¢ Apply diversity filter â”‚
-        â”‚ â€¢ Limit to N results     â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚ Database Enrichment      â”‚
-        â”‚ â€¢ Fetch file metadata    â”‚
-        â”‚ â€¢ Generate thumbnails   â”‚
-        â”‚ â€¢ Prepare API response   â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚ Performance Analytics    â”‚
-        â”‚ â€¢ Log search query       â”‚
-        â”‚ â€¢ Record response time   â”‚
-        â”‚ â€¢ Track accuracy metrics â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚
-                       â–¼
-                âœ… RESULTS
+          │                    │
+          └────────────┬───────┘
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │ Adaptive Weight          │
+        │ Calculation              │
+        │ • Query analysis based   │
+        │ • Dynamic semantic_w     │
+        │ • Dynamic keyword_w      │
+        └──────────────┬───────────┘
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │ Score Fusion             │
+        │ fused_score =            │
+        │ (semanticW × semantic) + │
+        │ (keywordW × keyword) +   │
+        │ dual_match_boost         │
+        └──────────────┬───────────┘
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │ Result Ranking &         │
+        │ Re-ranking               │
+        │ • Sort by fused score    │
+        │ • Apply diversity filter │
+        │ • Limit to N results     │
+        └──────────────┬───────────┘
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │ Database Enrichment      │
+        │ • Fetch file metadata    │
+        │ • Generate thumbnails   │
+        │ • Prepare API response   │
+        └──────────────┬───────────┘
+                       │
+                       ▼
+        ┌──────────────────────────┐
+        │ Performance Analytics    │
+        │ • Log search query       │
+        │ • Record response time   │
+        │ • Track accuracy metrics │
+        └──────────────┬───────────┘
+                       │
+                       ▼
+                ✅ RESULTS
           Returned to Frontend
           (avg <100ms)
 ```
 
 ---
 
-## ðŸ“‚ Project Structure
+## 📂 Project Structure
 
 ```
 searchx/
-â”‚
-â”œâ”€â”€ ðŸ“„ README.md                          # This file
-â”œâ”€â”€ ðŸ“„ requirements.txt                   # Python dependencies
-â”œâ”€â”€ ðŸ“„ .env.example                       # Environment template
-â”‚
-â”œâ”€â”€ ðŸ”· backend/                           # Python FastAPI Backend
-â”‚   â”‚
-â”‚   â”œâ”€â”€ ðŸ“„ main.py                        # FastAPI application entry point
-â”‚   â”œâ”€â”€ ðŸ“„ config.py                      # Configuration management
-â”‚   â”œâ”€â”€ ðŸ“„ database.py                    # SQLite connection & session
-â”‚   â”œâ”€â”€ ðŸ“„ models.py                      # SQLAlchemy ORM models
-â”‚   â”œâ”€â”€ ðŸ“„ requirements.txt                # Python package dependencies
-â”‚   â”‚
-â”‚   â”œâ”€â”€ ðŸ“ services/                      # Business Logic Services
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ upload_service.py          # File upload coordination
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ search_service.py          # Hybrid search orchestration
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ embedding_service.py       # MPNet-v2 vector generation
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ text_extraction_service.py # OCR & document parsing
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ thumbnail_service.py       # Thumbnail generation
-â”‚   â”‚   â””â”€â”€ ðŸ“„ vector_index_service.py    # FAISS index management
-â”‚   â”‚
-â”‚   â”œâ”€â”€ ðŸ“ storage/                       # File Storage (Auto-Created)
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ files/                     # Original uploaded files
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ thumbnails/                # Generated thumbnails
-â”‚   â”‚   â””â”€â”€ ðŸ“ embeddings/                # FAISS vector index
-â”‚   â”‚
-â”‚   â””â”€â”€ ðŸ“ tests/                         # Unit & Integration Tests
-â”‚       â”œâ”€â”€ ðŸ“„ test_search.py
-â”‚       â”œâ”€â”€ ðŸ“„ test_upload.py
-â”‚       â””â”€â”€ ðŸ“„ test_extraction.py
-â”‚
-â”œâ”€â”€ ðŸ”¶ frontend/                          # React + Vite Frontend
-â”‚   â”‚
-â”‚   â”œâ”€â”€ ðŸ“„ index.html                     # HTML entry point
-â”‚   â”œâ”€â”€ ðŸ“„ package.json                   # npm dependencies
-â”‚   â”œâ”€â”€ ðŸ“„ vite.config.js                 # Vite bundler config
-â”‚   â”œâ”€â”€ ðŸ“„ tailwind.config.js             # Tailwind CSS config
-â”‚   â”œâ”€â”€ ðŸ“„ postcss.config.js              # PostCSS configuration
-â”‚   â”œâ”€â”€ ðŸ“„ .env.example                   # Environment template
-â”‚   â”‚
-â”‚   â”œâ”€â”€ ðŸ“ src/
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ main.jsx                   # React entry point
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ App.jsx                    # Root component
-â”‚   â”‚   â”œâ”€â”€ ðŸ“„ index.css                  # Global styles
-â”‚   â”‚   â”‚
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ components/                # React Components
-â”‚   â”‚   â”‚   â”œâ”€â”€ ðŸ“„ Header.jsx             # Navigation header
-â”‚   â”‚   â”‚   â”œâ”€â”€ ðŸ“„ UploadZone.jsx         # Drag-drop upload
-â”‚   â”‚   â”‚   â”œâ”€â”€ ðŸ“„ SearchBar.jsx          # Query input
-â”‚   â”‚   â”‚   â”œâ”€â”€ ðŸ“„ FileGrid.jsx           # Results grid
-â”‚   â”‚   â”‚   â”œâ”€â”€ ðŸ“„ MediaViewer.jsx        # Image/PDF viewer
-â”‚   â”‚   â”‚   â””â”€â”€ ðŸ“„ StatsBar.jsx           # Statistics display
-â”‚   â”‚   â”‚
-â”‚   â”‚   â””â”€â”€ ðŸ“ services/
-â”‚   â”‚       â””â”€â”€ ðŸ“„ api.js                 # Backend API client
-â”‚   â”‚
-â”‚   â””â”€â”€ ðŸ“„ .env.example
-â”‚
-â”œâ”€â”€ ðŸ“ docs/                              # Documentation
-â”‚   â”œâ”€â”€ ðŸ“„ API_EXAMPLES.md
-â”‚   â”œâ”€â”€ ðŸ“„ DATABASE_SCHEMA.md
-â”‚   â””â”€â”€ ðŸ“„ SETUP_INSTRUCTIONS.md
-â”‚
-â””â”€â”€ ðŸ“ md/                                # Project Documentation
-    â”œâ”€â”€ ðŸ“„ README.md
-    â”œâ”€â”€ ðŸ“„ SearchX_Project_Report.md
-    â””â”€â”€ ðŸ“„ TECHNICAL_IMPLEMENTATION_GUIDE.md
+│
+├── 📄 README.md                          # This file
+├── 📄 requirements.txt                   # Python dependencies
+├── 📄 .env.example                       # Environment template
+│
+├── 🔷 backend/                           # Python FastAPI Backend
+│   │
+│   ├── 📄 main.py                        # FastAPI application entry point
+│   ├── 📄 config.py                      # Configuration management
+│   ├── 📄 database.py                    # SQLite connection & session
+│   ├── 📄 models.py                      # SQLAlchemy ORM models
+│   ├── 📄 requirements.txt                # Python package dependencies
+│   │
+│   ├── 📁 services/                      # Business Logic Services
+│   │   ├── 📄 upload_service.py          # File upload coordination
+│   │   ├── 📄 search_service.py          # Hybrid search orchestration
+│   │   ├── 📄 embedding_service.py       # MPNet-v2 vector generation
+│   │   ├── 📄 text_extraction_service.py # OCR & document parsing
+│   │   ├── 📄 thumbnail_service.py       # Thumbnail generation
+│   │   └── 📄 vector_index_service.py    # FAISS index management
+│   │
+│   ├── 📁 storage/                       # File Storage (Auto-Created)
+│   │   ├── 📁 files/                     # Original uploaded files
+│   │   ├── 📁 thumbnails/                # Generated thumbnails
+│   │   └── 📁 embeddings/                # FAISS vector index
+│   │
+│   └── 📁 tests/                         # Unit & Integration Tests
+│       ├── 📄 test_search.py
+│       ├── 📄 test_upload.py
+│       └── 📄 test_extraction.py
+│
+├── 🔶 frontend/                          # React + Vite Frontend
+│   │
+│   ├── 📄 index.html                     # HTML entry point
+│   ├── 📄 package.json                   # npm dependencies
+│   ├── 📄 vite.config.js                 # Vite bundler config
+│   ├── 📄 tailwind.config.js             # Tailwind CSS config
+│   ├── 📄 postcss.config.js              # PostCSS configuration
+│   ├── 📄 .env.example                   # Environment template
+│   │
+│   ├── 📁 src/
+│   │   ├── 📄 main.jsx                   # React entry point
+│   │   ├── 📄 App.jsx                    # Root component
+│   │   ├── 📄 index.css                  # Global styles
+│   │   │
+│   │   ├── 📁 components/                # React Components
+│   │   │   ├── 📄 Header.jsx             # Navigation header
+│   │   │   ├── 📄 UploadZone.jsx         # Drag-drop upload
+│   │   │   ├── 📄 SearchBar.jsx          # Query input
+│   │   │   ├── 📄 FileGrid.jsx           # Results grid
+│   │   │   ├── 📄 MediaViewer.jsx        # Image/PDF viewer
+│   │   │   └── 📄 StatsBar.jsx           # Statistics display
+│   │   │
+│   │   └── 📁 services/
+│   │       └── 📄 api.js                 # Backend API client
+│   │
+│   └── 📄 .env.example
+│
+├── 📁 docs/                              # Documentation
+│   ├── 📄 API_EXAMPLES.md
+│   ├── 📄 DATABASE_SCHEMA.md
+│   └── 📄 SETUP_INSTRUCTIONS.md
+│
+└── 📁 md/                                # Project Documentation
+    ├── 📄 README.md
+    ├── 📄 SearchX_Project_Report.md
+    └── 📄 TECHNICAL_IMPLEMENTATION_GUIDE.md
 ```
 
 ---
 
-## ðŸ› ï¸ Technology Stack
+## 🛠️ Technology Stack
 
 ### Backend Technologies
 
@@ -437,7 +437,7 @@ searchx/
 
 ---
 
-## ðŸš€ Quick Start Guide
+## 🚀 Quick Start Guide
 
 ### 1. Prerequisites
 
@@ -535,7 +535,7 @@ npm run dev
 
 ---
 
-## ðŸ”§ Setup Instructions (Detailed)
+## 🔧 Setup Instructions (Detailed)
 
 ### Backend Setup
 
@@ -680,8 +680,8 @@ npm run dev
 ```
   VITE v4.x.x  ready in XXX ms
 
-  âžœ  Local:   http://localhost:5173/
-  âžœ  press h to show help
+  ➜  Local:   http://localhost:5173/
+  ➜  press h to show help
 ```
 
 #### Step 4: Build for Production
@@ -693,7 +693,7 @@ npm run preview  # View production build locally
 
 ---
 
-## âš™ï¸ Advanced Configuration
+## ⚙️ Advanced Configuration
 
 ### Search Tuning
 
@@ -745,7 +745,7 @@ USE_GPU=True
 
 ---
 
-## ðŸ“¡ API Documentation
+## 📡 API Documentation
 
 ### Core Endpoints
 
@@ -986,7 +986,7 @@ Health check endpoint.
 
 ---
 
-## ðŸ“š Usage Guide
+## 📚 Usage Guide
 
 ### Basic Workflow
 
@@ -998,9 +998,9 @@ Health check endpoint.
 - **Supported Types**: JPG, PNG, WEBP, PDF, DOCX, TXT
 
 **Upload Progress:**
-- ðŸŸ  **Processing**: File is being processed
-- ðŸŸ¢ **Success**: File is indexed and searchable
-- ðŸ”´ **Failed**: Check file format/size
+- 🟠 **Processing**: File is being processed
+- 🟢 **Success**: File is indexed and searchable
+- 🔴 **Failed**: Check file format/size
 
 #### 2. **Search Your Files**
 
@@ -1059,7 +1059,7 @@ Health check endpoint.
 
 ---
 
-## ðŸ“Š Performance & Optimization
+## 📊 Performance & Optimization
 
 ### Search Performance Metrics
 
@@ -1099,7 +1099,7 @@ Health check endpoint.
 
 **Memory Usage** (approximate):
 - Base model: 420MB (loaded once)
-- FAISS index: 3KB per document (768D Ã— 4 bytes)
+- FAISS index: 3KB per document (768D × 4 bytes)
 - BM25 index: <1KB per document
 - Total for 1,000 documents: ~440-445MB
 
@@ -1126,7 +1126,7 @@ SEMANTIC_WEIGHT=0.8        # Prioritize semantic
 
 ---
 
-## ðŸ› Troubleshooting
+## 🐛 Troubleshooting
 
 ### Backend Issues
 
@@ -1223,7 +1223,7 @@ npm run dev
 
 ---
 
-## ðŸŒ Social Impact & SDG Alignment
+## 🌍 Social Impact & SDG Alignment
 
 ### Why SearchX Matters
 
@@ -1264,7 +1264,7 @@ SearchX advances several United Nations Sustainable Development Goals:
 
 ---
 
-## ðŸ“ Contributing
+## 📝 Contributing
 
 We welcome contributions! Areas for enhancement:
 
@@ -1277,13 +1277,13 @@ We welcome contributions! Areas for enhancement:
 
 ---
 
-## ðŸ“„ License
+## 📄 License
 
 This project is provided as-is for educational and research purposes.
 
 ---
 
-## ðŸ¤ Support
+## 🤝 Support
 
 For issues or questions:
 
@@ -1294,7 +1294,7 @@ For issues or questions:
 
 ---
 
-## ðŸ“š Additional Resources
+## 📚 Additional Resources
 
 - [API_EXAMPLES.md](docs/API_EXAMPLES.md) - Detailed API usage examples
 - [DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md) - Database structure documentation
@@ -1303,7 +1303,7 @@ For issues or questions:
 
 ---
 
-## ðŸŽ‰ Getting Started Checklist
+## 🎉 Getting Started Checklist
 
 - [ ] Install Python 3.9+
 - [ ] Install Node.js 16+
@@ -1319,7 +1319,7 @@ For issues or questions:
 - [ ] Open http://localhost:3000
 - [ ] Upload test files
 - [ ] Try semantic search
-- [ ] ðŸŽ‰ Enjoy SearchX!
+- [ ] 🎉 Enjoy SearchX!
 
 ---
 
@@ -1332,15 +1332,15 @@ For updates and information, visit the project documentation.
 
 This comprehensive README provides:
 
-âœ… **Complete Project Overview** - What SearchX is and its significance  
-âœ… **Detailed Architecture** - Visual diagrams and flow charts  
-âœ… **Full Setup Instructions** - Step-by-step for both backend and frontend  
-âœ… **Advanced Configuration** - Tuning and optimization options  
-âœ… **Complete API Documentation** - All major endpoints with examples  
-âœ… **Usage Guide** - How to use the system effectively  
-âœ… **Performance Metrics** - Actual measured performance data  
-âœ… **Troubleshooting** - Common issues and solutions  
-âœ… **Social Impact** - SDG alignment and broader benefits  
-âœ… **Technology Stack** - Complete list of tools and libraries  
+✅ **Complete Project Overview** - What SearchX is and its significance  
+✅ **Detailed Architecture** - Visual diagrams and flow charts  
+✅ **Full Setup Instructions** - Step-by-step for both backend and frontend  
+✅ **Advanced Configuration** - Tuning and optimization options  
+✅ **Complete API Documentation** - All major endpoints with examples  
+✅ **Usage Guide** - How to use the system effectively  
+✅ **Performance Metrics** - Actual measured performance data  
+✅ **Troubleshooting** - Common issues and solutions  
+✅ **Social Impact** - SDG alignment and broader benefits  
+✅ **Technology Stack** - Complete list of tools and libraries  
 
 You can now copy this entire text block and save it as your README.md file!
